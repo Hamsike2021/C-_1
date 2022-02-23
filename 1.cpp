@@ -3,6 +3,7 @@ using namespace std;
 
 int main() {
     int a, b;
+    double z;
     char c;
 
     cin >> a;
@@ -10,14 +11,15 @@ int main() {
     cin >> c;
 
     switch (c) {
-        case '+':
-            cout << a + b;
-        case '-':
-            cout << a - b;
-        case '*':
-            cout << a * b;
-        case '/':
-            cout << a / b;
+        case '+': z = a + b;
+            break;
+        case '-': z = a - b;
+            break;
+        case '*': z = a * b;
+            break;
+        case '/': z = a / b;
+            break;
     }
+    cout << z;
     return 0;
 }
